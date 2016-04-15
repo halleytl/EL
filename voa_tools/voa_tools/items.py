@@ -13,9 +13,20 @@ class VoaToolsItem(Item):
     # name = scrapy.Field()
     pass
 
-class VoaItem(Item):
+class VoaVideoItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = Field()
-    link = Field()
-    desc = Field()
+
+    # 单词
+    word = Field()
+
+    # 视频类型
+    video_type = Field()
+
+    # 视频格式
+    video_css_class = Field()
+
+    # 视频地址
+    video_src = Field()
+
+    video_desc = Field()
